@@ -11,19 +11,33 @@ The **SpeakX Full Stack Assignment** is a robust, gRPC-based search service desi
 
 plaintext
 project/
+
 ├── proto/
-│   └── question.proto          # gRPC service definition
+
+│   └── question.proto # gRPC service definition
+
 ├── models/
+
 │   └── question.model.js       # MongoDB schema for questions
+
 ├── config/
+
 │   └── db.js                   # MongoDB connection setup
+
 │   └── grpcServer.js           # gRPC server implementation
+
 │   └── redisClient.js          # Redis connection and utilities
+
 ├── routes/
+
 │   └── questionRoutes.js       # Express routes for HTTP API
-├── server.js                       # Main application entry point             
+
+├── server.js                       # Main application entry point  
+
 ├── package.json
+
 ├── .env                        # Environment variables
+
 └── README.md                   # Project documentation
 
 
