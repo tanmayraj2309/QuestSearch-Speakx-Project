@@ -202,57 +202,7 @@ Contributions are welcome! Please follow these guidelines:
 
 ---
 
-## Summary
 
-This comprehensive project offers a scalable, high-performance backend solution for managing and querying a questions database. The integration of Node.js, MongoDB, Redis, and gRPC ensures efficiency and reliability, while the well-structured folder organization facilitates maintainability and future development.
-
---- 
-
----
-
-### **Project Name:** QuestSearch
-
-### **Working Functionality:**
-
-1. **Search Functionality:**
-   - Users can search for questions based on a query, which returns a list of relevant questions from the database.
-   - **Search Types**: The search allows filtering by different types of questions, such as MCQ, Anagram, and Content-Only.
-   - The results are paginated to ensure users receive a manageable number of items at a time.
-
-2. **Question Details:**
-   - When a user selects a question, they can view detailed information such as options (for MCQs), blocks (for Anagrams), and the solution.
-   - For Anagram questions, users are presented with shuffled blocks of text and tasked with arranging them to form the correct answer.
-
-3. **Anagram Game:**
-   - Anagrams (Word/Sentence types) are displayed as blocks that users can select and rearrange.
-   - After arranging the blocks, users can check if their arrangement matches the correct solution.
-   - Feedback is provided on whether the user's arrangement is correct or incorrect.
-
-4. **Pagination and Filtering:**
-   - The system supports pagination for large question sets.
-   - Filters for question types, difficulty levels, and other attributes can be applied to refine search results.
-
-5. **Suggestions:**
-   - As users type in the search bar, real-time suggestions are fetched from the database based on partial input.
-   - Suggestions help users quickly find questions that match their interests or keywords.
-
-6. **User Interactivity:**
-   - Users can click on blocks to rearrange letters in an anagram.
-   - They can submit their answer to check if it’s correct or incorrect.
-
-7. **Error Handling:**
-   - The application displays appropriate error messages if any issues occur during data fetching or when the user interacts with the system (e.g., incorrect answers, no questions found, etc.).
-
-8. **Responsive Design:**
-   - The UI adjusts to different screen sizes, ensuring a smooth experience on both desktop and mobile devices.
-   - Tailwind CSS is used to create responsive layouts using utility classes.
-
-9. **Caching with Redis:**
-   - **Redis** is used to cache frequently accessed question data, such as search results and question details, to reduce database load and improve performance.
-   - When users search for questions or request details, Redis serves cached results if available, reducing the need to query the database multiple times for the same data.
-   - If the requested data is not found in the cache, it is fetched from the database and stored in Redis for future requests.
-
----
 
 ### **Technologies Used:**
 
