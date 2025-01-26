@@ -1,6 +1,4 @@
-Sure! Below is the updated documentation for your **SpeakX Full Stack Assignment**, reflecting the addition of type-based filtering for the search queries:
 
----
 
 # SpeakX Full Stack Assignment: Comprehensive Project Documentation
 
