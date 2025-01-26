@@ -15,8 +15,7 @@ const App = () => {
   return (
     <QuestionProvider>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
 
         <Route path="/allquestionPage" element={<AllQuestionPage />} />
         <Route path="/content_onlypage" element={<Content_OnlyPage />} />

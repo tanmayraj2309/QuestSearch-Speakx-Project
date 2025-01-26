@@ -34,7 +34,7 @@ const Result = () => {
           <span className="text-[#fe913a]">Similar</span>{' '}
           <span className="text-black">Titles</span>
         </h3>
-        <p className="text-xl font-semibold text-center text-gray-700 mb-8">Browse through the available questions</p>
+        {/* <p className="text-xl font-semibold text-center text-gray-700 mb-8">Browse through the available questions</p> */}
 
         {error && <p className="text-center text-red-500 text-lg mb-4">{error}</p>}
 
@@ -64,7 +64,7 @@ const Result = () => {
             })
           ) : (
             <p className="text-center text-gray-500 text-lg">
-              No questions found. Try searching for something!
+              {/* No questions found. Try searching for something! */}
             </p>
           )}
         </div>
