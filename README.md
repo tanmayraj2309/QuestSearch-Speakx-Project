@@ -1,11 +1,16 @@
+
+
 SpeakX Full Stack Assignment: Comprehensive Project Documentation
+
 The SpeakX Full Stack Assignment is a high-performance, scalable web application designed for managing and querying a question database. Leveraging Node.js, MongoDB, and Redis for the backend, and React for the frontend, it provides a seamless and efficient user experience. The integration of gRPC ensures low-latency communication, while Redis caching enhances performance.
 
 Key Features
 Search Functionality:
 
 Search questions by title with advanced filtering by type (e.g., MCQ, Anagram, Content-Only) and support for pagination.
+
 Provides paginated results to ensure optimal navigation for large datasets.
+
 Detailed Question View:
 
 Retrieve detailed information about specific questions, including options (for MCQs) or blocks (for Anagrams).
@@ -44,6 +49,10 @@ Response:
 json
 Copy
 Edit
+
+
+
+
 {
   "success": true,
   "currentPage": 1,
@@ -53,7 +62,9 @@ Edit
     { "_id": "102", "title": "History of Toys", "type": "CONTENT_ONLY" }
   ]
 }
-2. Retrieve Question by ID
+
+
+3. Retrieve Question by ID
 URL: /api/questionsById/:id
 Method: GET
 Parameters:
@@ -62,6 +73,9 @@ Response:
 json
 Copy
 Edit
+
+
+
 {
   "success": true,
   "question": {
@@ -74,7 +88,12 @@ Edit
     ]
   }
 }
-3. Autocomplete Suggestions
+
+
+
+
+
+5. Autocomplete Suggestions
 URL: /api/autocomplete
 Method: GET
 Parameters:
@@ -83,10 +102,15 @@ Response:
 json
 Copy
 Edit
+
+
+
 {
   "success": true,
   "suggestions": ["Math Basics", "Math Geometry"]
 }
+
+
 Setup Instructions
 Prerequisites
 Node.js (16+), MongoDB, Redis, Postman.
@@ -95,15 +119,20 @@ Clone the Repository:
 bash
 Copy
 Edit
+
 git clone https://github.com/your-username/SpeakX.git
+
 cd SpeakX/backend
+
 Install Dependencies:
 bash
 Copy
 Edit
+
 npm install
 Configure Environment Variables: Create a .env file:
 plaintext
+
 Copy
 Edit
 MONGO_URI=mongodb://localhost:27017/speakx
@@ -115,7 +144,11 @@ bash
 Copy
 Edit
 node server/index.js
+
+
 Technologies Used
+
+
 Frontend:
 React: Dynamic UI components and state management.
 Tailwind CSS: Utility-first CSS for responsive, modern designs.
