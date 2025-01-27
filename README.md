@@ -151,14 +151,24 @@ Technologies Used
 
 Frontend:
 React: Dynamic UI components and state management.
+
 Tailwind CSS: Utility-first CSS for responsive, modern designs.
+
 Context API: Manage global states like questions and search results.
+
 Backend:
 Node.js and Express.js: Robust backend and RESTful APIs.
+
 MongoDB: NoSQL database for storing questions.
+
 Redis: In-memory caching to enhance performance.
+
 gRPC: High-performance protocol for efficient communication.
+
 Utilities:
+
 Mongoose: MongoDB schema management.
+
 Debouncing: Optimized API calls for real-time suggestions.
+
 CORS: Secure backend-to-frontend communication.
